@@ -2619,3 +2619,1023 @@
 1349465318 source:/home/crom/Bureau/ClubElec/Aerodrone_gui/ConfigFile.cpp
 	"ConfigFile.hpp"
 
+1358083015 /usr/local/Trolltech/Qt-4.8.4/include/QtGui
+
+1358083010 /usr/local/Trolltech/Qt-4.8.4/include/QtNetwork
+
+1353665393 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/QThread
+	"qthread.h"
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qthread.h
+	<QtCore/qobject.h>
+	<limits.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qobject.h
+	<QtCore/qobjectdefs.h>
+	<QtCore/qstring.h>
+	<QtCore/qbytearray.h>
+	<QtCore/qlist.h>
+	<QtCore/qcoreevent.h>
+	<QtCore/qscopedpointer.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qobjectdefs.h
+	<QtCore/qnamespace.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qnamespace.h
+	<QtCore/qglobal.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qglobal.h
+	<stddef.h>
+	<QtCore/qconfig.h>
+	<algorithm>
+	<AvailabilityMacros.h>
+	<utility>
+	<e32def.h>
+	<QtCore/qfeatures.h>
+
+1358034641 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qconfig.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qfeatures.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qstring.h
+	<QtCore/qchar.h>
+	<QtCore/qbytearray.h>
+	<QtCore/qatomic.h>
+	<QtCore/qnamespace.h>
+	<Qt3Support/q3cstring.h>
+	<string>
+	<stdarg.h>
+	<QtCore/qstringbuilder.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qchar.h
+	<QtCore/qglobal.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qbytearray.h
+	<QtCore/qatomic.h>
+	<QtCore/qnamespace.h>
+	<string.h>
+	<stdarg.h>
+	<QtCore/qstring.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic.h
+	<QtCore/qglobal.h>
+	<QtCore/qbasicatomic.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qbasicatomic.h
+	<QtCore/qglobal.h>
+	<QtCore/qatomic_bootstrap.h>
+	<QtCore/qatomic_arch.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_bootstrap.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_arch.h
+	"QtCore/qglobal.h"
+	"QtCore/qatomic_integrity.h"
+	"QtCore/qatomic_vxworks.h"
+	"QtCore/qatomic_alpha.h"
+	"QtCore/qatomic_arm.h"
+	"QtCore/qatomic_armv6.h"
+	"QtCore/qatomic_avr32.h"
+	"QtCore/qatomic_bfin.h"
+	"QtCore/qatomic_generic.h"
+	"QtCore/qatomic_i386.h"
+	"QtCore/qatomic_ia64.h"
+	"QtCore/qatomic_macosx.h"
+	"QtCore/qatomic_mips.h"
+	"QtCore/qatomic_parisc.h"
+	"QtCore/qatomic_powerpc.h"
+	"QtCore/qatomic_s390.h"
+	"QtCore/qatomic_sparc.h"
+	"QtCore/qatomic_windows.h"
+	"QtCore/qatomic_windowsce.h"
+	"QtCore/qatomic_x86_64.h"
+	"QtCore/qatomic_symbian.h"
+	"QtCore/qatomic_sh.h"
+	"QtCore/qatomic_sh4a.h"
+	"QtCore/qatomic_generic.h"
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_integrity.h
+	<INTEGRITY.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_vxworks.h
+	<QtCore/qatomic_powerpc.h>
+	<vxWorksCommon.h>
+	<taskLib.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_powerpc.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_alpha.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_arm.h
+	"QtCore/qatomic_armv7.h"
+	"QtCore/qatomic_armv6.h"
+	"QtCore/qatomic_armv5.h"
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_armv7.h
+	"QtCore/qatomic_armv6.h"
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_armv6.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_armv5.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_avr32.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_bfin.h
+	<asm/fixed_code.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_generic.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_i386.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_ia64.h
+	<ia64intrin.h>
+	<ia64/sys/inline.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_macosx.h
+	<QtCore/qatomic_x86_64.h>
+	<QtCore/qatomic_i386.h>
+	<QtCore/qatomic_powerpc.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_x86_64.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_mips.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_parisc.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_s390.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_sparc.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_windows.h
+	"QtCore/qatomic_i386.h"
+	"QtCore/qatomic_x86_64.h"
+	<winbase.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_windowsce.h
+	<QtCore/qglobal.h>
+	"QtCore/qatomic_windows.h"
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_symbian.h
+	<QtCore/qglobal.h>
+	<e32std.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_sh.h
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qatomic_sh4a.h
+
+1353665393 /usr/local/Trolltech/Qt-4.8.4/include/Qt3Support/q3cstring.h
+	<QtCore/qbytearray.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qstringbuilder.h
+	<QtCore/qstring.h>
+	<QtCore/qbytearray.h>
+	<QtCore/qmap.h>
+	<string.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qmap.h
+	<QtCore/qatomic.h>
+	<QtCore/qiterator.h>
+	<QtCore/qlist.h>
+	<map>
+	<new>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qiterator.h
+	<QtCore/qglobal.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qlist.h
+	<QtCore/qiterator.h>
+	<QtCore/qatomic.h>
+	<QtCore/qalgorithms.h>
+	<iterator>
+	<list>
+	<iterator>
+	<initializer_list>
+	<new>
+	<limits.h>
+	<string.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qalgorithms.h
+	<QtCore/qglobal.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qcoreevent.h
+	<QtCore/qnamespace.h>
+	<QtCore/qbytearray.h>
+	<QtCore/qobjectdefs.h>
+
+1353665395 /usr/local/Trolltech/Qt-4.8.4/include/QtCore/qscopedpointer.h
+	<QtCore/qglobal.h>
+
+1349465318 source:/home/ssp/T0140327/Desktop/Aerodrone_gui/ConfigFile.cpp
+	"ConfigFile.hpp"
+
+1349464622 /home/ssp/T0140327/Desktop/Aerodrone_gui/ConfigFile.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+
+1350484380 source:/home/ssp/T0140327/Desktop/Aerodrone_gui/main.cpp
+	<iostream>
+	<QtGui>
+	"Window.hpp"
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtGui
+
+1358171441 /home/ssp/T0140327/Desktop/Aerodrone_gui/Window.hpp
+	<iostream>
+	<sys/time.h>
+	<cstdint>
+	<QtGui>
+	<QtNetwork>
+	<QThread>
+	"misc.h"
+	"ConfigFile.hpp"
+	"ConnectionPanel.hpp"
+	"MotorInfo.hpp"
+	"AcceleroInfo.hpp"
+	"UpdateThread.hpp"
+	"moc_Window.cpp"
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtNetwork
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/QThread
+	"qthread.h"
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qthread.h
+	"../../src/corelib/thread/qthread.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/thread/qthread.h
+	<QtCore/qobject.h>
+	<limits.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qobject.h
+	"../../src/corelib/kernel/qobject.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/kernel/qobject.h
+	<QtCore/qobjectdefs.h>
+	<QtCore/qstring.h>
+	<QtCore/qbytearray.h>
+	<QtCore/qlist.h>
+	<QtCore/qcoreevent.h>
+	<QtCore/qscopedpointer.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qobjectdefs.h
+	"../../src/corelib/kernel/qobjectdefs.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/kernel/qobjectdefs.h
+	<QtCore/qnamespace.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qnamespace.h
+	"../../src/corelib/global/qnamespace.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/global/qnamespace.h
+	<QtCore/qglobal.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qglobal.h
+	"../../src/corelib/global/qglobal.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/global/qglobal.h
+	<stddef.h>
+	<QtCore/qconfig.h>
+	<algorithm>
+	<AvailabilityMacros.h>
+	<utility>
+	<e32def.h>
+	<QtCore/qfeatures.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qconfig.h
+	"../../src/corelib/global/qconfig.h"
+
+1358160969 /home/ssp/T0140327/Downloads/qt4/src/corelib/global/qconfig.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qfeatures.h
+	"../../src/corelib/global/qfeatures.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/global/qfeatures.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qstring.h
+	"../../src/corelib/tools/qstring.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/tools/qstring.h
+	<QtCore/qchar.h>
+	<QtCore/qbytearray.h>
+	<QtCore/qatomic.h>
+	<QtCore/qnamespace.h>
+	<Qt3Support/q3cstring.h>
+	<string>
+	<stdarg.h>
+	<QtCore/qstringbuilder.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qchar.h
+	"../../src/corelib/tools/qchar.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/tools/qchar.h
+	<QtCore/qglobal.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qbytearray.h
+	"../../src/corelib/tools/qbytearray.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/tools/qbytearray.h
+	<QtCore/qatomic.h>
+	<QtCore/qnamespace.h>
+	<string.h>
+	<stdarg.h>
+	<QtCore/qstring.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic.h
+	"../../src/corelib/thread/qatomic.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/thread/qatomic.h
+	<QtCore/qglobal.h>
+	<QtCore/qbasicatomic.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qbasicatomic.h
+	"../../src/corelib/thread/qbasicatomic.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/thread/qbasicatomic.h
+	<QtCore/qglobal.h>
+	<QtCore/qatomic_bootstrap.h>
+	<QtCore/qatomic_arch.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_bootstrap.h
+	"../../src/corelib/arch/qatomic_bootstrap.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_bootstrap.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_arch.h
+	"../../src/corelib/arch/qatomic_arch.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_arch.h
+	"QtCore/qglobal.h"
+	"QtCore/qatomic_integrity.h"
+	"QtCore/qatomic_vxworks.h"
+	"QtCore/qatomic_alpha.h"
+	"QtCore/qatomic_arm.h"
+	"QtCore/qatomic_armv6.h"
+	"QtCore/qatomic_avr32.h"
+	"QtCore/qatomic_bfin.h"
+	"QtCore/qatomic_generic.h"
+	"QtCore/qatomic_i386.h"
+	"QtCore/qatomic_ia64.h"
+	"QtCore/qatomic_macosx.h"
+	"QtCore/qatomic_mips.h"
+	"QtCore/qatomic_parisc.h"
+	"QtCore/qatomic_powerpc.h"
+	"QtCore/qatomic_s390.h"
+	"QtCore/qatomic_sparc.h"
+	"QtCore/qatomic_windows.h"
+	"QtCore/qatomic_windowsce.h"
+	"QtCore/qatomic_x86_64.h"
+	"QtCore/qatomic_symbian.h"
+	"QtCore/qatomic_sh.h"
+	"QtCore/qatomic_sh4a.h"
+	"QtCore/qatomic_generic.h"
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_integrity.h
+	"../../src/corelib/arch/qatomic_integrity.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_integrity.h
+	<INTEGRITY.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_vxworks.h
+	"../../src/corelib/arch/qatomic_vxworks.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_vxworks.h
+	<QtCore/qatomic_powerpc.h>
+	<vxWorksCommon.h>
+	<taskLib.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_powerpc.h
+	"../../src/corelib/arch/qatomic_powerpc.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_powerpc.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_alpha.h
+	"../../src/corelib/arch/qatomic_alpha.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_alpha.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_arm.h
+	"../../src/corelib/arch/qatomic_arm.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_arm.h
+	"QtCore/qatomic_armv7.h"
+	"QtCore/qatomic_armv6.h"
+	"QtCore/qatomic_armv5.h"
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_armv7.h
+	"../../src/corelib/arch/qatomic_armv7.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_armv7.h
+	"QtCore/qatomic_armv6.h"
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_armv6.h
+	"../../src/corelib/arch/qatomic_armv6.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_armv6.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_armv5.h
+	"../../src/corelib/arch/qatomic_armv5.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_armv5.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_avr32.h
+	"../../src/corelib/arch/qatomic_avr32.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_avr32.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_bfin.h
+	"../../src/corelib/arch/qatomic_bfin.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_bfin.h
+	<asm/fixed_code.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_generic.h
+	"../../src/corelib/arch/qatomic_generic.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_generic.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_i386.h
+	"../../src/corelib/arch/qatomic_i386.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_i386.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_ia64.h
+	"../../src/corelib/arch/qatomic_ia64.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_ia64.h
+	<ia64intrin.h>
+	<ia64/sys/inline.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_macosx.h
+	"../../src/corelib/arch/qatomic_macosx.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_macosx.h
+	<QtCore/qatomic_x86_64.h>
+	<QtCore/qatomic_i386.h>
+	<QtCore/qatomic_powerpc.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_x86_64.h
+	"../../src/corelib/arch/qatomic_x86_64.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_x86_64.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_mips.h
+	"../../src/corelib/arch/qatomic_mips.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_mips.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_parisc.h
+	"../../src/corelib/arch/qatomic_parisc.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_parisc.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_s390.h
+	"../../src/corelib/arch/qatomic_s390.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_s390.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_sparc.h
+	"../../src/corelib/arch/qatomic_sparc.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_sparc.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_windows.h
+	"../../src/corelib/arch/qatomic_windows.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_windows.h
+	"QtCore/qatomic_i386.h"
+	"QtCore/qatomic_x86_64.h"
+	<winbase.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_windowsce.h
+	"../../src/corelib/arch/qatomic_windowsce.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_windowsce.h
+	<QtCore/qglobal.h>
+	"QtCore/qatomic_windows.h"
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_symbian.h
+	"../../src/corelib/arch/qatomic_symbian.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_symbian.h
+	<QtCore/qglobal.h>
+	<e32std.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_sh.h
+	"../../src/corelib/arch/qatomic_sh.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_sh.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qatomic_sh4a.h
+	"../../src/corelib/arch/qatomic_sh4a.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/arch/qatomic_sh4a.h
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/Qt3Support/q3cstring.h
+	"../../src/qt3support/tools/q3cstring.h"
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/src/qt3support/tools/q3cstring.h
+	<QtCore/qbytearray.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qstringbuilder.h
+	"../../src/corelib/tools/qstringbuilder.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/tools/qstringbuilder.h
+	<QtCore/qstring.h>
+	<QtCore/qbytearray.h>
+	<QtCore/qmap.h>
+	<string.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qmap.h
+	"../../src/corelib/tools/qmap.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/tools/qmap.h
+	<QtCore/qatomic.h>
+	<QtCore/qiterator.h>
+	<QtCore/qlist.h>
+	<map>
+	<new>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qiterator.h
+	"../../src/corelib/tools/qiterator.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/tools/qiterator.h
+	<QtCore/qglobal.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qlist.h
+	"../../src/corelib/tools/qlist.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/tools/qlist.h
+	<QtCore/qiterator.h>
+	<QtCore/qatomic.h>
+	<QtCore/qalgorithms.h>
+	<iterator>
+	<list>
+	<iterator>
+	<initializer_list>
+	<new>
+	<limits.h>
+	<string.h>
+
+1358166622 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qalgorithms.h
+	"../../src/corelib/tools/qalgorithms.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/tools/qalgorithms.h
+	<QtCore/qglobal.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qcoreevent.h
+	"../../src/corelib/kernel/qcoreevent.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/kernel/qcoreevent.h
+	<QtCore/qnamespace.h>
+	<QtCore/qbytearray.h>
+	<QtCore/qobjectdefs.h>
+
+1353665393 /home/ssp/T0140327/Downloads/qt4/include/QtCore/qscopedpointer.h
+	"../../src/corelib/tools/qscopedpointer.h"
+
+1353665395 /home/ssp/T0140327/Downloads/qt4/src/corelib/tools/qscopedpointer.h
+	<QtCore/qglobal.h>
+
+1350551940 /home/ssp/T0140327/Desktop/Aerodrone_gui/misc.h
+	<sstream>
+	<ctime>
+
+1350230180 /home/ssp/T0140327/Desktop/Aerodrone_gui/ConnectionPanel.hpp
+	<iostream>
+	<QtGui>
+	<QtNetwork>
+	"misc.h"
+	"moc_ConnectionPanel.cpp"
+
+1349970562 /home/ssp/T0140327/Desktop/Aerodrone_gui/moc_ConnectionPanel.cpp
+	"ConnectionPanel.hpp"
+
+1350583916 /home/ssp/T0140327/Desktop/Aerodrone_gui/MotorInfo.hpp
+	<iostream>
+	<sstream>
+	<QtGui>
+	"misc.h"
+
+1350583830 /home/ssp/T0140327/Desktop/Aerodrone_gui/AcceleroInfo.hpp
+	<iostream>
+	<sstream>
+	<cmath>
+	<QtGui>
+
+1358171441 /home/ssp/T0140327/Desktop/Aerodrone_gui/UpdateThread.hpp
+	<QThread>
+	<QtNetwork>
+	<cstdint>
+
+1350563950 /home/ssp/T0140327/Desktop/Aerodrone_gui/moc_Window.cpp
+	"Window.hpp"
+
+1358266516 source:/home/ssp/T0140327/.drone/Aerodrone_gui/ConfigFile.cpp
+	"ConfigFile.hpp"
+
+1358266516 /home/ssp/T0140327/.drone/Aerodrone_gui/ConfigFile.hpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+
+1358266516 source:/home/ssp/T0140327/.drone/Aerodrone_gui/main.cpp
+	<iostream>
+	<QtGui>
+	"Window.hpp"
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtGui
+
+1358345304 /home/ssp/T0140327/.drone/Aerodrone_gui/Window.hpp
+	<iostream>
+	<sys/time.h>
+	<cstdint>
+	<QtGui>
+	<QtNetwork>
+	<QThread>
+	"misc.h"
+	"ConfigFile.hpp"
+	"ConnectionPanel.hpp"
+	"MotorInfo.hpp"
+	"AcceleroInfo.hpp"
+	"UpdateThread.hpp"
+	"moc_Window.cpp"
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtNetwork
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/QThread
+	"qthread.h"
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qthread.h
+	"../../src/corelib/thread/qthread.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/thread/qthread.h
+	<QtCore/qobject.h>
+	<limits.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qobject.h
+	"../../src/corelib/kernel/qobject.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/kernel/qobject.h
+	<QtCore/qobjectdefs.h>
+	<QtCore/qstring.h>
+	<QtCore/qbytearray.h>
+	<QtCore/qlist.h>
+	<QtCore/qcoreevent.h>
+	<QtCore/qscopedpointer.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qobjectdefs.h
+	"../../src/corelib/kernel/qobjectdefs.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/kernel/qobjectdefs.h
+	<QtCore/qnamespace.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qnamespace.h
+	"../../src/corelib/global/qnamespace.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/global/qnamespace.h
+	<QtCore/qglobal.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qglobal.h
+	"../../src/corelib/global/qglobal.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/global/qglobal.h
+	<stddef.h>
+	<QtCore/qconfig.h>
+	<algorithm>
+	<AvailabilityMacros.h>
+	<utility>
+	<e32def.h>
+	<QtCore/qfeatures.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qconfig.h
+	"../../src/corelib/global/qconfig.h"
+
+1358338329 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/global/qconfig.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qfeatures.h
+	"../../src/corelib/global/qfeatures.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/global/qfeatures.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qstring.h
+	"../../src/corelib/tools/qstring.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/tools/qstring.h
+	<QtCore/qchar.h>
+	<QtCore/qbytearray.h>
+	<QtCore/qatomic.h>
+	<QtCore/qnamespace.h>
+	<Qt3Support/q3cstring.h>
+	<string>
+	<stdarg.h>
+	<QtCore/qstringbuilder.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qchar.h
+	"../../src/corelib/tools/qchar.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/tools/qchar.h
+	<QtCore/qglobal.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qbytearray.h
+	"../../src/corelib/tools/qbytearray.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/tools/qbytearray.h
+	<QtCore/qatomic.h>
+	<QtCore/qnamespace.h>
+	<string.h>
+	<stdarg.h>
+	<QtCore/qstring.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic.h
+	"../../src/corelib/thread/qatomic.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/thread/qatomic.h
+	<QtCore/qglobal.h>
+	<QtCore/qbasicatomic.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qbasicatomic.h
+	"../../src/corelib/thread/qbasicatomic.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/thread/qbasicatomic.h
+	<QtCore/qglobal.h>
+	<QtCore/qatomic_bootstrap.h>
+	<QtCore/qatomic_arch.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_bootstrap.h
+	"../../src/corelib/arch/qatomic_bootstrap.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_bootstrap.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_arch.h
+	"../../src/corelib/arch/qatomic_arch.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_arch.h
+	"QtCore/qglobal.h"
+	"QtCore/qatomic_integrity.h"
+	"QtCore/qatomic_vxworks.h"
+	"QtCore/qatomic_alpha.h"
+	"QtCore/qatomic_arm.h"
+	"QtCore/qatomic_armv6.h"
+	"QtCore/qatomic_avr32.h"
+	"QtCore/qatomic_bfin.h"
+	"QtCore/qatomic_generic.h"
+	"QtCore/qatomic_i386.h"
+	"QtCore/qatomic_ia64.h"
+	"QtCore/qatomic_macosx.h"
+	"QtCore/qatomic_mips.h"
+	"QtCore/qatomic_parisc.h"
+	"QtCore/qatomic_powerpc.h"
+	"QtCore/qatomic_s390.h"
+	"QtCore/qatomic_sparc.h"
+	"QtCore/qatomic_windows.h"
+	"QtCore/qatomic_windowsce.h"
+	"QtCore/qatomic_x86_64.h"
+	"QtCore/qatomic_symbian.h"
+	"QtCore/qatomic_sh.h"
+	"QtCore/qatomic_sh4a.h"
+	"QtCore/qatomic_generic.h"
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_integrity.h
+	"../../src/corelib/arch/qatomic_integrity.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_integrity.h
+	<INTEGRITY.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_vxworks.h
+	"../../src/corelib/arch/qatomic_vxworks.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_vxworks.h
+	<QtCore/qatomic_powerpc.h>
+	<vxWorksCommon.h>
+	<taskLib.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_powerpc.h
+	"../../src/corelib/arch/qatomic_powerpc.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_powerpc.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_alpha.h
+	"../../src/corelib/arch/qatomic_alpha.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_alpha.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_arm.h
+	"../../src/corelib/arch/qatomic_arm.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_arm.h
+	"QtCore/qatomic_armv7.h"
+	"QtCore/qatomic_armv6.h"
+	"QtCore/qatomic_armv5.h"
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_armv7.h
+	"../../src/corelib/arch/qatomic_armv7.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_armv7.h
+	"QtCore/qatomic_armv6.h"
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_armv6.h
+	"../../src/corelib/arch/qatomic_armv6.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_armv6.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_armv5.h
+	"../../src/corelib/arch/qatomic_armv5.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_armv5.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_avr32.h
+	"../../src/corelib/arch/qatomic_avr32.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_avr32.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_bfin.h
+	"../../src/corelib/arch/qatomic_bfin.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_bfin.h
+	<asm/fixed_code.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_generic.h
+	"../../src/corelib/arch/qatomic_generic.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_generic.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_i386.h
+	"../../src/corelib/arch/qatomic_i386.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_i386.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_ia64.h
+	"../../src/corelib/arch/qatomic_ia64.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_ia64.h
+	<ia64intrin.h>
+	<ia64/sys/inline.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_macosx.h
+	"../../src/corelib/arch/qatomic_macosx.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_macosx.h
+	<QtCore/qatomic_x86_64.h>
+	<QtCore/qatomic_i386.h>
+	<QtCore/qatomic_powerpc.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_x86_64.h
+	"../../src/corelib/arch/qatomic_x86_64.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_x86_64.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_mips.h
+	"../../src/corelib/arch/qatomic_mips.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_mips.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_parisc.h
+	"../../src/corelib/arch/qatomic_parisc.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_parisc.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_s390.h
+	"../../src/corelib/arch/qatomic_s390.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_s390.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_sparc.h
+	"../../src/corelib/arch/qatomic_sparc.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_sparc.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_windows.h
+	"../../src/corelib/arch/qatomic_windows.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_windows.h
+	"QtCore/qatomic_i386.h"
+	"QtCore/qatomic_x86_64.h"
+	<winbase.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_windowsce.h
+	"../../src/corelib/arch/qatomic_windowsce.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_windowsce.h
+	<QtCore/qglobal.h>
+	"QtCore/qatomic_windows.h"
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_symbian.h
+	"../../src/corelib/arch/qatomic_symbian.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_symbian.h
+	<QtCore/qglobal.h>
+	<e32std.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_sh.h
+	"../../src/corelib/arch/qatomic_sh.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_sh.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qatomic_sh4a.h
+	"../../src/corelib/arch/qatomic_sh4a.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/arch/qatomic_sh4a.h
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/Qt3Support/q3cstring.h
+	"../../src/qt3support/tools/q3cstring.h"
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/qt3support/tools/q3cstring.h
+	<QtCore/qbytearray.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qstringbuilder.h
+	"../../src/corelib/tools/qstringbuilder.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/tools/qstringbuilder.h
+	<QtCore/qstring.h>
+	<QtCore/qbytearray.h>
+	<QtCore/qmap.h>
+	<string.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qmap.h
+	"../../src/corelib/tools/qmap.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/tools/qmap.h
+	<QtCore/qatomic.h>
+	<QtCore/qiterator.h>
+	<QtCore/qlist.h>
+	<map>
+	<new>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qiterator.h
+	"../../src/corelib/tools/qiterator.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/tools/qiterator.h
+	<QtCore/qglobal.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qlist.h
+	"../../src/corelib/tools/qlist.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/tools/qlist.h
+	<QtCore/qiterator.h>
+	<QtCore/qatomic.h>
+	<QtCore/qalgorithms.h>
+	<iterator>
+	<list>
+	<iterator>
+	<initializer_list>
+	<new>
+	<limits.h>
+	<string.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qalgorithms.h
+	"../../src/corelib/tools/qalgorithms.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/tools/qalgorithms.h
+	<QtCore/qglobal.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qcoreevent.h
+	"../../src/corelib/kernel/qcoreevent.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/kernel/qcoreevent.h
+	<QtCore/qnamespace.h>
+	<QtCore/qbytearray.h>
+	<QtCore/qobjectdefs.h>
+
+1353665393 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/include/QtCore/qscopedpointer.h
+	"../../src/corelib/tools/qscopedpointer.h"
+
+1353665395 /home/ssp/T0140327/.drone/qt-everywhere-opensource-src-4.8.4/src/corelib/tools/qscopedpointer.h
+	<QtCore/qglobal.h>
+
+1358266516 /home/ssp/T0140327/.drone/Aerodrone_gui/misc.h
+	<sstream>
+	<ctime>
+
+1358266516 /home/ssp/T0140327/.drone/Aerodrone_gui/ConnectionPanel.hpp
+	<iostream>
+	<QtGui>
+	<QtNetwork>
+	"misc.h"
+	"moc_ConnectionPanel.cpp"
+
+1358266516 /home/ssp/T0140327/.drone/Aerodrone_gui/moc_ConnectionPanel.cpp
+	"ConnectionPanel.hpp"
+
+1358266516 /home/ssp/T0140327/.drone/Aerodrone_gui/MotorInfo.hpp
+	<iostream>
+	<sstream>
+	<QtGui>
+	"misc.h"
+
+1358266516 /home/ssp/T0140327/.drone/Aerodrone_gui/AcceleroInfo.hpp
+	<iostream>
+	<sstream>
+	<cmath>
+	<QtGui>
+
+1358266516 /home/ssp/T0140327/.drone/Aerodrone_gui/UpdateThread.hpp
+	<QThread>
+	<QtNetwork>
+	<cstdint>
+
+1358266516 /home/ssp/T0140327/.drone/Aerodrone_gui/moc_Window.cpp
+	"Window.hpp"
+

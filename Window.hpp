@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <sys/time.h>
+#include <cstdint>
 using namespace std;
 
 #include <QtGui>
@@ -19,8 +20,9 @@ using namespace std;
 #include "UpdateThread.hpp"
 
 
-#define NET_INFOREQUEST (quint8)(1)
-#define NET_INFODATA (quint8)(2)
+#define NET_INFOREQUEST (uint8_t)(1)
+#define NET_INFODATA (uint8_t)(2)
+#define NET_CHANGEMOTORSPEED (uint8_t)3
 
 
 
@@ -38,7 +40,8 @@ public:
 		m_lblIp("<em>IP : </em>", this), m_lblPort("<em>Port : </em>", this),
 		m_leIp(this), m_lePort(this),
 		m_lblAerodrone(this),
-		but("Test!", this)
+		m_spinbAddSpeed(this),
+		m_pbutAddSpeed("Ajouter!", this)
 	{
 		m_cfg.Load("./config.cfg");
 
@@ -87,11 +90,14 @@ public:
 		m_motorInfo[3]->setGeometry(10, 75, 180, 180);
 		//
 
-		but.setGeometry(10, 550, 100, 25);
-		connect(&but, SIGNAL(clicked()), this, SLOT(SendInfoRequest()));
-
 		m_acceleroInfo = new AcceleroInfo(this);
 		m_acceleroInfo->setGeometry(325, 365, 150, 110);
+
+        m_spinbAddSpeed.setGeometry(10, 550, 50, 25);
+        m_spinbAddSpeed.setRange(-100, 100);
+		m_pbutAddSpeed.setGeometry(70, 550, 100, 25);
+		connect(&m_pbutAddSpeed, SIGNAL(clicked()), this, SLOT(SendInfoRequest()));
+
 
 		show();
 	}
@@ -109,7 +115,7 @@ public:
 private:
 	ConfigFile m_cfg;
 	QTcpSocket m_sockDev;
-	quint16 m_nBlockSize;
+	uint16_t m_nBlockSize;
 
 	UpdateThread m_thread;
 
@@ -124,7 +130,8 @@ private:
 	MotorInfo* m_motorInfo[4];
 	AcceleroInfo* m_acceleroInfo;
 
-	QPushButton but;
+	QSpinBox m_spinbAddSpeed;
+	QPushButton m_pbutAddSpeed;
 
 
 
@@ -197,7 +204,7 @@ private slots:
 
 		if(m_nBlockSize == 0)
 		{
-			if(m_sockDev.bytesAvailable() < (int)sizeof(quint16))
+			if(m_sockDev.bytesAvailable() < (int)sizeof(uint16_t))
 				return;
 
 			in >> m_nBlockSize;
@@ -209,7 +216,7 @@ private slots:
 		//The entire packet has been received
 
 		//Extract the action (meaning) of the packet
-		quint8 nAction = 0;
+		uint8_t nAction = 0;
 		in >> nAction;
 
 		if(nAction == NET_INFOREQUEST)
@@ -222,7 +229,7 @@ private slots:
 
 
 			//Extracting motor info
-			quint16 nMot1, nMot2, nMot3, nMot4;
+			uint16_t nMot1, nMot2, nMot3, nMot4;
 			in >> nMot1;
 			in >> nMot2;
 			in >> nMot3;
@@ -234,7 +241,7 @@ private slots:
 			m_motorInfo[3]->SetMotorSpeed(nMot4/655.36);
 
 			//Extracting accelerometer info
-			qint16 nAccelX, nAccelY, nAccelZ;
+			uint16_t nAccelX, nAccelY, nAccelZ;
 			in >> nAccelX;
 			in >> nAccelY;
 			in >> nAccelZ;
@@ -265,14 +272,16 @@ private slots:
 		out.setVersion(QDataStream::Qt_4_0);
 
 		//Allocate space for packet size
-		out << (quint16)0;
+		out << (uint16_t)0;
 
 		//Insert data
-		out << NET_INFOREQUEST;
+		out << NET_CHANGEMOTORSPEED;
+
+		out << (uint16_t)((m_spinbAddSpeed.value()+100)*327.68);
 
 		//Write packet size
 		out.device()->seek(0);
-		out << (quint16)(packet.size() - sizeof(quint16));
+		out << (uint16_t)(packet.size() - sizeof(uint16_t));
 
 		m_sockDev.write(packet);
 	}

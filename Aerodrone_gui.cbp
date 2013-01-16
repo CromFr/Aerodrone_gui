@@ -31,32 +31,30 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="/usr/local/qt4wrap/include" />
-			<Add directory="/usr/local/qt4wrap/include/QtGui" />
-			<Add directory="/usr/local/qt4wrap/include/QtNetwork" />
-			<Add directory="/usr/local/qt4wrap/include/QtCore" />
+			<Add option="-fPIC" />
+			<Add directory="../qt-everywhere-opensource-src-4.8.4/include" />
+			<Add directory="../qt-everywhere-opensource-src-4.8.4/include/QtGui" />
+			<Add directory="../qt-everywhere-opensource-src-4.8.4/include/QtCore" />
+			<Add directory="../qt-everywhere-opensource-src-4.8.4/include/QtNetwork" />
 		</Compiler>
-		<ResourceCompiler>
-			<Add directory="/usr/local/qt4wrap/bin" />
-		</ResourceCompiler>
 		<Linker>
 			<Add option="-lQtCore" />
 			<Add option="-lQtGui" />
 			<Add option="-lQtNetwork" />
-			<Add directory="/usr/local/qt4wrap/lib" />
+			<Add directory="../qt-everywhere-opensource-src-4.8.4/lib" />
 		</Linker>
-		<Unit filename="./AcceleroInfo.hpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="./UpdateThread.hpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="./Window.hpp">
+		<Unit filename="AcceleroInfo.hpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="ConfigFile.cpp" />
 		<Unit filename="ConfigFile.hpp" />
 		<Unit filename="MotorInfo.hpp" />
+		<Unit filename="UpdateThread.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Window.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="main.cpp" />
 		<Unit filename="misc.h" />
 		<Extensions>

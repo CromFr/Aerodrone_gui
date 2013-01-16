@@ -4,6 +4,10 @@
 #include <QThread>
 #include <QtNetwork>
 
+#include <cstdint>
+#define NET_INFOREQUEST (uint8_t)(1)
+#define NET_INFODATA (uint8_t)(2)
+
 
 class UpdateThread : public QThread
 {
@@ -36,14 +40,14 @@ private:
 				out.setVersion(QDataStream::Qt_4_0);
 
 				//Allocate space for packet size
-				out << (quint16)0;
+				out << (uint16_t)0;
 
 				//Insert data
-				out << (quint8)(1);//NET_INFOREQUEST;
+				out << NET_INFOREQUEST;
 
 				//Write packet size
 				out.device()->seek(0);
-				out << (quint16)(packet.size() - sizeof(quint16));
+				out << (uint16_t)(packet.size() - sizeof(uint16_t));
 
 				m_socket->write(packet);
 			}

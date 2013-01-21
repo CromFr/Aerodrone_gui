@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 			<Add option="-fPIC" />
+			<Add option="-std=c++11" />
 			<Add directory="../qt-everywhere-opensource-src-4.8.4/include" />
 			<Add directory="../qt-everywhere-opensource-src-4.8.4/include/QtGui" />
 			<Add directory="../qt-everywhere-opensource-src-4.8.4/include/QtCore" />

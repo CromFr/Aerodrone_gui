@@ -20,9 +20,11 @@ using namespace std;
 #include "UpdateThread.hpp"
 
 
-#define NET_INFOREQUEST (uint8_t)(1)
-#define NET_INFODATA (uint8_t)(2)
-#define NET_CHANGEMOTORSPEED (uint8_t)3
+#define NET_INFOREQUEST (uint8_t)1
+#define NET_INFODATA (uint8_t)2
+#define NET_SETGLOBALMOTORSPEED (uint8_t)3
+#define NET_RESETINTEGRATOR (uint8_t)4
+#define NET_CRITICALLAND (uint8_t)5
 
 
 
@@ -35,13 +37,13 @@ public:
 	Window() :
 		m_sockDev(this),
 		m_thread(this, &m_sockDev),
-		m_pbutConnect("Connect device", this),
-		m_pbutDisconnect("Disconnect", this),
+		m_pbutConnect("&Connect device", this),
+		m_pbutDisconnect("&Disconnect", this),
 		m_lblIp("<em>IP : </em>", this), m_lblPort("<em>Port : </em>", this),
 		m_leIp(this), m_lePort(this),
 		m_lblAerodrone(this),
-		m_spinbAddSpeed(this),
-		m_pbutAddSpeed("Ajouter!", this)
+		m_sliderGlobalSpeed(this), m_lblGlobalSpeed("0", this),
+		m_pbutCritLand("Crit. Error\n&Land", this)
 	{
 		m_cfg.Load("./config.cfg");
 
@@ -88,15 +90,22 @@ public:
 		m_motorInfo[1]->setGeometry(610, 295, 180, 180);
 		m_motorInfo[2]->setGeometry(10, 295, 180, 180);
 		m_motorInfo[3]->setGeometry(10, 75, 180, 180);
-		//
 
 		m_acceleroInfo = new AcceleroInfo(this);
 		m_acceleroInfo->setGeometry(325, 365, 150, 110);
+		//
 
-        m_spinbAddSpeed.setGeometry(10, 550, 50, 25);
-        m_spinbAddSpeed.setRange(-100, 100);
-		m_pbutAddSpeed.setGeometry(70, 550, 100, 25);
-		connect(&m_pbutAddSpeed, SIGNAL(clicked()), this, SLOT(SendInfoRequest()));
+
+		m_sliderGlobalSpeed.setOrientation(Qt::Horizontal);
+        m_sliderGlobalSpeed.setGeometry(10, 550, 200, 25);
+        m_sliderGlobalSpeed.setRange(0, 100);
+        m_lblGlobalSpeed.setGeometry(220, 550, 30, 25);
+		m_lblGlobalSpeed.setAlignment(Qt::AlignCenter | Qt::AlignVCenter);
+		connect(&m_sliderGlobalSpeed, SIGNAL(valueChanged(int)), &m_lblGlobalSpeed, SLOT(setNum(int)));
+		connect(&m_sliderGlobalSpeed, SIGNAL(valueChanged(int)), this, SLOT(SendGlobalMotorSpeed()));
+
+		m_pbutCritLand.setGeometry(710, 510, 80, 80);
+		connect(&m_pbutCritLand, SIGNAL(pressed()), this, SLOT(SendCriticalLand()));
 
 
 		show();
@@ -130,8 +139,10 @@ private:
 	MotorInfo* m_motorInfo[4];
 	AcceleroInfo* m_acceleroInfo;
 
-	QSpinBox m_spinbAddSpeed;
-	QPushButton m_pbutAddSpeed;
+	QSlider m_sliderGlobalSpeed;
+	QLabel m_lblGlobalSpeed;
+
+	QPushButton m_pbutCritLand;
 
 
 
@@ -189,8 +200,8 @@ private slots:
 			m_leIp.setEnabled(true);
 			m_lePort.setEnabled(true);
 		}
-		m_leIp.setText(m_sockDev.localAddress().toString());
-		m_lePort.setText(QString::number(m_sockDev.peerPort()));
+		//m_leIp.setText(m_sockDev.localAddress().toString());
+		//m_lePort.setText(QString::number(m_sockDev.peerPort()));
 	}
 
 
@@ -265,7 +276,7 @@ private slots:
 	/**
 	@brief
 	**/
-	void SendInfoRequest()
+	void SendGlobalMotorSpeed()
 	{
 		QByteArray packet;
 		QDataStream out(&packet, QIODevice::WriteOnly);
@@ -275,9 +286,9 @@ private slots:
 		out << (uint16_t)0;
 
 		//Insert data
-		out << NET_CHANGEMOTORSPEED;
+		out << NET_SETGLOBALMOTORSPEED;
 
-		out << (uint16_t)((m_spinbAddSpeed.value()+100)*327.68);
+		out << (uint16_t)(m_sliderGlobalSpeed.value()*655.36);
 
 		//Write packet size
 		out.device()->seek(0);
@@ -286,7 +297,24 @@ private slots:
 		m_sockDev.write(packet);
 	}
 
+	void SendCriticalLand()
+	{
+		QByteArray packet;
+		QDataStream out(&packet, QIODevice::WriteOnly);
+		out.setVersion(QDataStream::Qt_4_0);
 
+		//Allocate space for packet size
+		out << (uint16_t)0;
+
+		//Insert data
+		out << NET_CRITICALLAND;
+
+		//Write packet size
+		out.device()->seek(0);
+		out << (uint16_t)(packet.size() - sizeof(uint16_t));
+
+		m_sockDev.write(packet);
+	}
 
 
 

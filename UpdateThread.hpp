@@ -5,9 +5,12 @@
 #include <QtNetwork>
 
 #include <cstdint>
-#define NET_INFOREQUEST (uint8_t)(1)
-#define NET_INFODATA (uint8_t)(2)
 
+#define NET_INFOREQUEST (uint8_t)1
+#define NET_INFODATA (uint8_t)2
+#define NET_SETGLOBALMOTORSPEED (uint8_t)3
+#define NET_RESETINTEGRATOR (uint8_t)4
+#define NET_CRITICALLAND (uint8_t)5
 
 class UpdateThread : public QThread
 {

@@ -26,6 +26,20 @@ using namespace std;
 #define NET_RESETINTEGRATOR (uint8_t)4
 #define NET_CRITICALLAND (uint8_t)5
 
+#define NET_MOVE (uint8_t)10
+	#define NET_MOVE_XINC (uint8_t)1
+	#define NET_MOVE_XDEC (uint8_t)2
+	#define NET_MOVE_XSTOP (uint8_t)3
+	#define NET_MOVE_YINC (uint8_t)4
+	#define NET_MOVE_YDEC (uint8_t)5
+	#define NET_MOVE_YSTOP (uint8_t)6
+	#define NET_MOVE_ZINC (uint8_t)7
+	#define NET_MOVE_ZDEC (uint8_t)8
+	#define NET_MOVE_ZSTOP (uint8_t)9
+	#define NET_MOVE_RINC (uint8_t)10
+	#define NET_MOVE_RDEC (uint8_t)11
+	#define NET_MOVE_RSTOP (uint8_t)12
+
 
 
 
@@ -67,9 +81,11 @@ public:
 		m_lblIp.setGeometry(370, 10, 50, 25);
 		m_lblIp.setAlignment(Qt::AlignRight | Qt::AlignVCenter);
 		m_leIp.setGeometry(430, 10, 150, 25);
+		m_leIp.setInputMask(QString("000.000.000.000"));
 		m_lblPort.setGeometry(620, 10, 50, 25);
 		m_lblPort.setAlignment(Qt::AlignRight | Qt::AlignVCenter);
 		m_lePort.setGeometry(680, 10, 80, 25);
+		m_lePort.setInputMask(QString("00000"));
 
 		connect(&m_pbutConnect, SIGNAL(clicked()), this, SLOT(Connect()));
 		connect(&m_pbutDisconnect, SIGNAL(clicked()), this, SLOT(Disconnect()));
@@ -119,6 +135,82 @@ public:
 			delete m_motorInfo[i];
 
 		delete m_acceleroInfo;
+	}
+
+	void keyPressEvent(QKeyEvent* e)
+	{
+		if(e->isAutoRepeat())return;
+
+		if(e->key() == Qt::Key_Escape)
+		{
+			m_pbutCritLand.animateClick(1000);
+		}
+		else if(e->key()==Qt::Key_Z || e->key()==Qt::Key_S
+				|| e->key()==Qt::Key_Q || e->key()==Qt::Key_D
+				|| e->key()==Qt::Key_A || e->key()==Qt::Key_E
+				|| e->key()==Qt::Key_R || e->key()==Qt::Key_F )
+		{
+			QByteArray packet;
+			QDataStream out(&packet, QIODevice::WriteOnly);
+			out.setVersion(QDataStream::Qt_4_0);
+
+			out << (uint16_t)0;
+			out << NET_MOVE;
+
+			if(e->key() == Qt::Key_Z)
+				out << NET_MOVE_YINC;
+			else if(e->key() == Qt::Key_S)
+				out << NET_MOVE_YDEC;
+			else if(e->key() == Qt::Key_D)
+				out << NET_MOVE_XINC;
+			else if(e->key() == Qt::Key_Q)
+				out << NET_MOVE_XDEC;
+			else if(e->key() == Qt::Key_A)
+				out << NET_MOVE_RINC;
+			else if(e->key() == Qt::Key_E)
+				out << NET_MOVE_RDEC;
+			else if(e->key() == Qt::Key_R)
+				out << NET_MOVE_ZINC;
+			else if(e->key() == Qt::Key_F)
+				out << NET_MOVE_ZDEC;
+
+			out.device()->seek(0);
+			out << (uint16_t)(packet.size() - sizeof(uint16_t));
+
+			m_sockDev.write(packet);
+		}
+	}
+
+	void keyReleaseEvent(QKeyEvent* e)
+	{
+		if(e->isAutoRepeat())return;
+
+		if(e->key()==Qt::Key_Z || e->key()==Qt::Key_S
+				|| e->key()==Qt::Key_Q || e->key()==Qt::Key_D
+				|| e->key()==Qt::Key_A || e->key()==Qt::Key_E
+				|| e->key()==Qt::Key_R || e->key()==Qt::Key_F )
+		{
+			QByteArray packet;
+			QDataStream out(&packet, QIODevice::WriteOnly);
+			out.setVersion(QDataStream::Qt_4_0);
+
+			out << (uint16_t)0;
+			out << NET_MOVE;
+
+			if(e->key() == Qt::Key_Z || e->key() == Qt::Key_S)
+				out << NET_MOVE_YSTOP;
+			else if(e->key() == Qt::Key_Q || e->key() == Qt::Key_D)
+				out << NET_MOVE_XSTOP;
+			else if(e->key() == Qt::Key_A || e->key() == Qt::Key_E)
+				out << NET_MOVE_RSTOP;
+			else if(e->key() == Qt::Key_F || e->key() == Qt::Key_R)
+				out << NET_MOVE_ZSTOP;
+
+			out.device()->seek(0);
+			out << (uint16_t)(packet.size() - sizeof(uint16_t));
+
+			m_sockDev.write(packet);
+		}
 	}
 
 private:
@@ -299,6 +391,7 @@ private slots:
 
 	void SendCriticalLand()
 	{
+		std::cout<<"CritLand"<<std::endl;
 		QByteArray packet;
 		QDataStream out(&packet, QIODevice::WriteOnly);
 		out.setVersion(QDataStream::Qt_4_0);

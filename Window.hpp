@@ -56,7 +56,7 @@ public:
 		m_lblIp("<em>IP : </em>", this), m_lblPort("<em>Port : </em>", this),
 		m_leIp(this), m_lePort(this),
 		m_lblAerodrone(this),
-		m_sliderGlobalSpeed(this), m_lblGlobalSpeed("0", this),
+//		m_sliderGlobalSpeed(this), m_lblGlobalSpeed("0", this),
 		m_pbutCritLand("Crit. Error\n&Land", this)
 	{
 		m_cfg.Load("./config.cfg");
@@ -112,13 +112,13 @@ public:
 		//
 
 
-		m_sliderGlobalSpeed.setOrientation(Qt::Horizontal);
-        m_sliderGlobalSpeed.setGeometry(10, 550, 200, 25);
-        m_sliderGlobalSpeed.setRange(0, 100);
-        m_lblGlobalSpeed.setGeometry(220, 550, 30, 25);
-		m_lblGlobalSpeed.setAlignment(Qt::AlignCenter | Qt::AlignVCenter);
-		connect(&m_sliderGlobalSpeed, SIGNAL(valueChanged(int)), &m_lblGlobalSpeed, SLOT(setNum(int)));
-		connect(&m_sliderGlobalSpeed, SIGNAL(valueChanged(int)), this, SLOT(SendGlobalMotorSpeed()));
+//		m_sliderGlobalSpeed.setOrientation(Qt::Horizontal);
+//        m_sliderGlobalSpeed.setGeometry(10, 550, 200, 25);
+//        m_sliderGlobalSpeed.setRange(0, 100);
+//        m_lblGlobalSpeed.setGeometry(220, 550, 30, 25);
+//		m_lblGlobalSpeed.setAlignment(Qt::AlignCenter | Qt::AlignVCenter);
+//		connect(&m_sliderGlobalSpeed, SIGNAL(valueChanged(int)), &m_lblGlobalSpeed, SLOT(setNum(int)));
+//		connect(&m_sliderGlobalSpeed, SIGNAL(valueChanged(int)), this, SLOT(SendGlobalMotorSpeed()));
 
 		m_pbutCritLand.setGeometry(710, 510, 80, 80);
 		connect(&m_pbutCritLand, SIGNAL(pressed()), this, SLOT(SendCriticalLand()));
@@ -231,8 +231,8 @@ private:
 	MotorInfo* m_motorInfo[4];
 	AcceleroInfo* m_acceleroInfo;
 
-	QSlider m_sliderGlobalSpeed;
-	QLabel m_lblGlobalSpeed;
+//	QSlider m_sliderGlobalSpeed;
+//	QLabel m_lblGlobalSpeed;
 
 	QPushButton m_pbutCritLand;
 
@@ -370,23 +370,23 @@ private slots:
 	**/
 	void SendGlobalMotorSpeed()
 	{
-		QByteArray packet;
-		QDataStream out(&packet, QIODevice::WriteOnly);
-		out.setVersion(QDataStream::Qt_4_0);
-
-		//Allocate space for packet size
-		out << (uint16_t)0;
-
-		//Insert data
-		out << NET_SETGLOBALMOTORSPEED;
-
-		out << (uint16_t)(m_sliderGlobalSpeed.value()*655.36);
-
-		//Write packet size
-		out.device()->seek(0);
-		out << (uint16_t)(packet.size() - sizeof(uint16_t));
-
-		m_sockDev.write(packet);
+//		QByteArray packet;
+//		QDataStream out(&packet, QIODevice::WriteOnly);
+//		out.setVersion(QDataStream::Qt_4_0);
+//
+//		//Allocate space for packet size
+//		out << (uint16_t)0;
+//
+//		//Insert data
+//		out << NET_SETGLOBALMOTORSPEED;
+//
+//		out << (uint16_t)(m_sliderGlobalSpeed.value()*655.36);
+//
+//		//Write packet size
+//		out.device()->seek(0);
+//		out << (uint16_t)(packet.size() - sizeof(uint16_t));
+//
+//		m_sockDev.write(packet);
 	}
 
 	void SendCriticalLand()
